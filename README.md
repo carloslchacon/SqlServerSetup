@@ -11,6 +11,12 @@ Due to the response we got from the list, we decided to make this a community op
  - Post Install
       This section includes options outside of SQL Server.  Response processes or 3rd party tools are listed here.  We may be splitting hairs here, but this section also includes SQL Server Agent settings.
       
-The files are currently in text format for easier merging options.
+The files are currently in text format for easier merging options; however, this does present some challenges for formatting.  The files follow this basic pattern
+
+/****
+*Notes Section
+*****/
+- top level point
+ o subpoint  (yes, that is a tab)
 
 We will merge contributions from time to time and make the 'updated' checklist available on the website.      
