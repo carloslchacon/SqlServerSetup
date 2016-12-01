@@ -1,0 +1,10 @@
+/***********************************************
+*Install
+*
+* The settings needed for SQL Server to be installed.
+***********************************************/
+- Install SQL Server
+	o Only select the components you want to install
+	o Do not install SSRS, SSAS, and SSIS on production server if they are not going to be used.
+- Choose SQL Agent service to start on startup
+- Update SQL Server Service Pack and Cumulative Update

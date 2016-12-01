@@ -1,0 +1,31 @@
+/*************************************************
+*Configuration
+*
+*This section includes SQL Server settings. 
+*Trace Flags and other parameters are set in this section.
+*************************************************/
+- Set the sql server service, and the sql agent service to run as the user configured earlier.
+- Set trace flags
+	o 1117 – Grow all files in a file group evenly. (this is the default and not need in 2016).
+	o 1118 – Full Extents only.
+	o 3023 – Enable checksums on backups.
+	o 3226 – Silence backup messages in the log.
+	o Any others trace flags for you environment.
+- Stop and start the SQL Server Service, and the Sql Agent Service
+- Configure the network configuration in the SQL Server Configuration Manager to allow TCP.
+- Set the default log file location.
+- Set the default data file location.
+- Configure TempDB- Size the file and add additional files. Start with 8 Tempdb data files, fill up 80% of the TempDB drive.
+- Set SQL Server Max Degree of Parallelism to match the number of cores, or the number of cores per numa node.
+- Set Cost Threshold for Parallelism Start with 50, consider increasing from there based on performance.
+- Set Max Memory to 90% of RAM and leave 10% to Windows (If SQL Server is only service installed)
+- Modify the Model Database for any specific preferences.
+- Index maintenance (Use Oal Halgreen’s) http://ola.hallengren.com/
+- Configure a CHECKDB script
+ Enable DAC
+- Set the mixed mode login if needed.
+- Turn on Enable for ad hoc workloads (in most cases).
+- Set the default backup compression option to compress.
+- Configure SQL Server Log and Agent log settings.
+	o We normally keep 15 SQL Server Logs
+	o Ensure the history will help you keep enough history for each job. This normally means capping the limit of an individual job to 10% or the total number of entries kept.

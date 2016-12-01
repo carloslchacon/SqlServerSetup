@@ -1,0 +1,19 @@
+/********************************************
+* Post Install
+*
+*This section includes options outside of SQL Server. 
+*Response processes or 3rd party tools are listed here. 
+*We may be splitting hairs here, but this section also includes SQL Server Agent settings.
+**********************************************/
+- Enable database mail
+	o Create an operator that points to your support email or your email
+- Remove the local server admins group from the security group
+- Configure backups. There are two free options. Ola’s or Minions scripts
+- Create job to remove backup history
+- Create job to recycle the log (we like weekly)
+- Larger shops might not need virus scanning software, but plenty of smaller shops still need it because admins use the internet from the server. If you have Anti-virus software, remove the drive where SQL Server data is stored
+- Install Monitoring Software of your choice
+Ours happens to be the Database Health Monitor (http://DatabaseHealth.com/download)
+	o Turn on historic monitoring of waits.
+	o Run the Quick Scan report in Database Health Monitor and look for additional issues.
+- Create a database owner user and disallow login. Set the database owners to use this login.
