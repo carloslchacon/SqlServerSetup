@@ -6,10 +6,10 @@
 *************************************************/
 - Set the sql server service, and the sql agent service to run as the user configured earlier.
 - Set trace flags
-	o 1117 – Grow all files in a file group evenly. (this is the default and not need in 2016).
-	o 1118 – Full Extents only.
-	o 3023 – Enable checksums on backups.
-	o 3226 – Silence backup messages in the log.
+	o 1117 - Grow all files in a file group evenly. (this is the default and not need in 2016).
+	o 1118 - Full Extents only.
+	o 3023 - Enable checksums on backups.
+	o 3226 - Silence backup messages in the log.
 	o Any others trace flags for you environment.
 - Stop and start the SQL Server Service, and the Sql Agent Service
 - Configure the network configuration in the SQL Server Configuration Manager to allow TCP.
