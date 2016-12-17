@@ -7,6 +7,7 @@
  - The server team has hopefully installed all the latest patches; however, it is always a good idea to double check.
  - Ensure security updates don’t automatically install
  - Install BGINFO – so that when you remote desktop to the server it is clear what server you are on.
+BGINFO is a tool that adds system information to your desktop wallpaper so that you have a better understanding of the server you are connected to.
  - Provision Drives
 	o Drive for Data files.
 	o Drive for Log files
@@ -17,8 +18,8 @@
 - Create service accounts and grant permission to a domain (AD) user, one per SQL Server and agent.
 	o Include Perform Volume Maintenance Tasks (if IFI is desired)
 - Create Directories.
-	o create directory on the log drive called TransactionLog (i.e. L:\TransactionLog)
-	o create directory on the data drive called SqlData (i.e. G:\SqlData)
+	o Create directory on the log drive called TransactionLog (i.e. L:\TransactionLog)
+	o Create directory on the data drive called SqlData (i.e. G:\SqlData)
 - Configure the server firewall
 Generally the windows firewall is turned off on a database server.  These are ports you will need to allow.
 	o Allow Port 1433
