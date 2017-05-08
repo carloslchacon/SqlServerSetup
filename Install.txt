@@ -6,5 +6,6 @@
 - Install SQL Server
 	o Only select the components you want to install
 	o Do not install SSRS, SSAS, and SSIS on production server if they are not going to be used.
-- Choose SQL Agent service to start on startup
+- Choose SQL Agent service to automatic startup.
+- If using named instances set the SQL Browser to automatic startup.
 - Update SQL Server Service Pack and Cumulative Update
