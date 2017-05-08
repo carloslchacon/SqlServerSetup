@@ -6,7 +6,7 @@
 *************************************************/
 - Set the sql server service, and the sql agent service to run as the user configured earlier.
 - Set trace flags
-	o 1117 - Grow all files in a file group evenly. (this is the default and not need in 2016).
+	o 1117 - Grow all files in a file group evenly. (this is the default and not needed in 2016).
 	o 1118 - Full Extents only.
 	o 3023 - Enable checksums on backups.
 	o 3226 - Silence backup messages in the log.
@@ -22,7 +22,7 @@
 - Modify the Model Database for any specific preferences.
 - Index maintenance (Use Oal Halgreen’s) http://ola.hallengren.com/
 - Configure a CHECKDB script
- Enable DAC
+- Enable DAC
 - Set the mixed mode login if needed.
 - Turn on Enable for ad hoc workloads (in most cases).
 - Set the default backup compression option to compress.
