@@ -7,10 +7,11 @@
 **********************************************/
 - Enable database mail
 	o Create an operator that points to your support email or your email
+	o Configure the SQL Server Alerts properties for Alert System to Enable mail profile, and to use the mail profile that was just configured.
 - Remove the local server admins group from the security group
 - Configure backups. There are two free options. Ola’s or Minions scripts
 - Create job to remove backup history
-- Create job to recycle the log (we like weekly)
+- Create job to cycle the SQL Server log and the SQL Agent log (we like weekly)
 - Larger shops might not need virus scanning software, but plenty of smaller shops still need it because admins use the internet from the server. If you have Anti-virus software, remove the drive where SQL Server data is stored
 - Install Monitoring Software of your choice
 Ours happens to be the Database Health Monitor (http://DatabaseHealth.com/download)
